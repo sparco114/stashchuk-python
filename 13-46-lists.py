@@ -17,5 +17,3 @@ print(5, lis2)
 
 lis.extend(lis2)
 print(6, lis)
-
-
