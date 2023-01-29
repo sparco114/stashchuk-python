@@ -56,3 +56,34 @@ def filter_list(lis, datatype):
 
 
 print(filter_list(lis2, int))
+
+# -------------------------------------------------------------------------------------------------
+
+print('------Exercise 3------')
+lis3 = [1, 2.5, True, 'Man', None, True, 5.7859, 22, 'Women']
+print(lis3)
+
+
+def filter_list(lis, datatype):
+    def check_type(ee):
+        if type(ee) is datatype:
+            return True
+    res = filter(check_type, lis)
+    print(list(res))
+
+
+filter_list(lis3, float)
+
+# -------------------------------------------------------------------------------------------------
+
+print('------Exercise 4------')
+lis4 = [1, 2.5, True, 'Man', None, True, 5.7859, 22, 'Women']
+print(lis4)
+
+
+def filter_list(lis, datatype):
+    res = filter(lambda eee: type(eee) is datatype, lis)
+    print(list(res))
+
+
+filter_list(lis4, str)
