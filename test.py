@@ -28,8 +28,8 @@ print(dic1)
 
 def dic_to_list(diction):
     for k, v in diction.items():
-        if type(v) is int:
-        # if isinstance(v, int): ---будет считать класс bool как класс int, так как bool является подклассом int
+        # if type(v) is int:
+        if isinstance(v, int):
             diction[k] = v * 2
         # else:
         #     pass
@@ -55,4 +55,4 @@ def filter_list(lis, datatype):
     return new
 
 
-print(filter_list(lis2, float))
+print(filter_list(lis2, int))
