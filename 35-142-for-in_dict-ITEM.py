@@ -28,7 +28,8 @@ print(dic1)
 
 def dic_to_list(diction):
     for k, v in diction.items():
-        if type(v) is int:
+        # if type(v) is int:
+        if isinstance(v, int):
             diction[k] = v * 2
         # else:
         #     pass
@@ -48,7 +49,8 @@ print(lis2)
 def filter_list(lis, datatype):
     new = []
     for ee in lis:
-        if type(ee) is datatype:
+        # if type(ee) is datatype:
+        if isinstance(ee, datatype):
             new.append(ee)
     return new
 
